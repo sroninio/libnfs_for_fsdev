@@ -202,7 +202,7 @@ struct rpc_pdu *rpc_allocate_pdu2(struct rpc_context *rpc, int program, int vers
         }
 #endif /* HAVE_MULTITHREADING */
 
-        printf("!!!!!!! we are inserting rpc->xid = [%d]\n", rpc->xid); // delete later
+        // printf("!!!!!!! we are inserting rpc->xid = [%d]\n", rpc->xid); // delete later
         pdu->xid = rpc->xid++;
 #ifdef HAVE_MULTITHREADING
         if (rpc->multithreading_enabled)
